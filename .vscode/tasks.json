@@ -8,7 +8,7 @@
             "args": [
                 "-std=c++17",
                 "-o",
-                "${fileBasenameNoExtension}",
+                "program",
                 "${file}"
             ],
             "group": {
@@ -19,7 +19,7 @@
         {
             "label": "compile and run",
             "type": "shell",
-            "command": "g++ -std=c++17 -o ${fileBasenameNoExtension} ${file} && ./${fileBasenameNoExtension} < input.txt > output.txt",
+            "command": "g++ -std=c++17 -o program ${file} && ./program < input.txt > output.txt",
             "group": {
                 "kind": "build",
                 "isDefault": true
